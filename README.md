@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version ruby 2.3.6p384
+* Ruby version ruby 2.5.1
 
 * System dependencies
 

@@ -41,13 +41,12 @@ module CitiesHelper
         @errors.push({timestamp: Time.now,description:'How unfortunate! The API Request Failed'})
         retry
       end
-
       city_response = JSON.parse(response, symbolize_names: true) 
-      country = city_response[:timezone]
+      country = city[:name]
       time = (Time.strptime("#{city_response[:currently][:time]}",'%S')).strftime("%H:%M:%S")
       temperature = city_response[:currently][:temperature]
-      city = {country: country,time: time,temperature: temperature}
-      @cities.push(city)
+      city_data = {country: country,time: time,temperature: temperature}
+      @cities.push(city_data)
     end
     {cities: @cities,errors: @errors}
   end
