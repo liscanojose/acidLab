@@ -1,7 +1,6 @@
 module CitiesHelper
   require 'httparty'
   API_URL = 'https://api.darksky.net/forecast/'
-  #API_TOKEN = '53ea6cffc61c9fd466713d4149591a43'
   API_TOKEN = 'da664bf04e33bd0443eea297e77848ac'
 
   def fetch_cities
