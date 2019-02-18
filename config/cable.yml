@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: redis://redistogo:8186b78d585ed9a386106a92e0b7ab7c@crestfish.redistogo.com:9390/
   channel_prefix: practica_production
