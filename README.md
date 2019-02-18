@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version ruby 2.3.6p384
 
 * System dependencies
 
@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+# acidLab
+Proyecto con action cable para actualizar el front cada cierto tiempo y consumo de api, almacenando la informacion con redis
