@@ -12,6 +12,7 @@ module Practica
     config.load_defaults 5.2
     config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', {expires_in: 90.minutes}
     #config.action_cable.mount_path = '/websocket'
+    config.assets.initialize_on_precompile = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
